@@ -90,7 +90,7 @@ else
 
     export PYTHONNOUSERSITE=1
 
-    if pip install -e git+https://github.com/TencentARC/GFPGAN#egg=GFPGAN ; then
+    if pip install -e git+file:///mnt/stable/stable-diffusion-webui/GFPGAN ; then
         echo "Installed. Testing.."
     else
         printf "\n\nError installing the packages necessary for GFPGAN (Face Correction). Sorry about that, please try to:\n  1. Run this installer again.\n  2. If that doesn't fix it, please try the common troubleshooting steps at https://github.com/cmdr2/stable-diffusion-ui/blob/main/Troubleshooting.md\n  3. If those steps don't help, please copy *all* the error messages in this window, and ask the community at https://discord.com/invite/u9yhsFmEkB\n  4. If that doesn't solve the problem, please file an issue at https://github.com/cmdr2/stable-diffusion-ui/issues\nThanks!\n\n"
